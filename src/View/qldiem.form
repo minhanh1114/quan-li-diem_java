@@ -25,11 +25,13 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
-              <Component id="thongtinsv" min="-2" pref="604" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="xinchao" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              <Component id="thongtinsv" min="-2" pref="447" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="xinchao" min="-2" pref="203" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
               <Component id="jButton10" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
@@ -74,7 +76,7 @@
                                       <Component id="ck" min="-2" pref="160" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="73" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jButton3" min="-2" max="-2" attributes="0"/>
@@ -94,32 +96,13 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="kyhoc" min="-2" pref="160" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButton7" min="-2" pref="58" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jButton7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jButton8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jButton5" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="cpatheoky" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="cpa" min="-2" pref="77" max="-2" attributes="0"/>
-                      <EmptySpace pref="57" max="32767" attributes="0"/>
-                      <Component id="jButton9" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="gpa" min="-2" pref="77" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
-                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="hlsv" min="-2" pref="61" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="gpadata" min="-2" pref="77" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -132,9 +115,29 @@
                           </Group>
                           <Component id="ten" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="cpatheoky" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="cpa" min="-2" pref="77" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+              <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="gpa" min="-2" pref="77" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+              <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="hlsv" min="-2" pref="61" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="gpadata" min="-2" pref="77" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -142,11 +145,14 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="xinchao" pref="27" max="32767" attributes="0"/>
-                      <Component id="thongtinsv" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButton10" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="xinchao" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <Component id="jButton10" min="-2" max="-2" attributes="0"/>
+                  <Component id="thongtinsv" min="-2" pref="65" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -202,17 +208,17 @@
                   <Component id="jButton8" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="352" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="275" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButton5" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cpatheoky" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cpa" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton6" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="gpa" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="gpadata" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="hlsv" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton9" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="gpa" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton6" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hlsv" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="gpadata" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -266,7 +272,7 @@
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/icon/Actions-edit-clear-icon.png"/>
+          <Image iconType="3" name="/icon/clean24x24.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Clear"/>
       </Properties>
@@ -275,11 +281,16 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="thongtinsv">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icon/student-card64x64.png"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/icon/add-icon24x24.png"/>
+          <Image iconType="3" name="/icon/add24x24.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Th&#xea;m"/>
       </Properties>
@@ -312,7 +323,7 @@
     <Component class="javax.swing.JButton" name="jButton4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/icon/Close-icon.png"/>
+          <Image iconType="3" name="/icon/delete24x24.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="X&#xf3;a"/>
       </Properties>
@@ -322,6 +333,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton5">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icon/cpax24.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="CPA"/>
       </Properties>
       <Events>
@@ -333,31 +347,29 @@
     <Component class="javax.swing.JComboBox" name="cpatheoky">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="18">
-            <StringItem index="0" value="20141"/>
-            <StringItem index="1" value="20142"/>
-            <StringItem index="2" value="20143"/>
-            <StringItem index="3" value="20151"/>
-            <StringItem index="4" value="20152"/>
-            <StringItem index="5" value="20153"/>
-            <StringItem index="6" value="20161"/>
-            <StringItem index="7" value="20162"/>
-            <StringItem index="8" value="20163"/>
-            <StringItem index="9" value="20171"/>
-            <StringItem index="10" value="20172"/>
-            <StringItem index="11" value="20173"/>
-            <StringItem index="12" value="20181"/>
-            <StringItem index="13" value="20182"/>
-            <StringItem index="14" value="20183"/>
-            <StringItem index="15" value="20191"/>
-            <StringItem index="16" value="20192"/>
-            <StringItem index="17" value="20193"/>
+          <StringArray count="13">
+            <StringItem index="0" value="20181"/>
+            <StringItem index="1" value="20182"/>
+            <StringItem index="2" value="20191"/>
+            <StringItem index="3" value="20192"/>
+            <StringItem index="4" value="20201"/>
+            <StringItem index="5" value="20202"/>
+            <StringItem index="6" value="20211"/>
+            <StringItem index="7" value="20212"/>
+            <StringItem index="8" value="20221"/>
+            <StringItem index="9" value="20222"/>
+            <StringItem index="10" value="20231"/>
+            <StringItem index="11" value="20232"/>
+            <StringItem index="12" value=" "/>
           </StringArray>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton6">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icon/diem-4x24.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="GPA C&#x1ea7;n"/>
       </Properties>
       <Events>
@@ -368,6 +380,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icon/printer.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="In"/>
       </Properties>
       <Events>
@@ -377,7 +392,7 @@
     <Component class="javax.swing.JButton" name="jButton8">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/icon/Help-icon.png"/>
+          <Image iconType="3" name="/icon/idea24x24.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Hdsd"/>
       </Properties>
@@ -387,6 +402,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton9">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icon/gpax24.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="GPA"/>
       </Properties>
       <Events>
@@ -418,6 +436,9 @@
       <SubComponents>
         <Component class="javax.swing.JTable" name="bangdiemsv">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="d4" green="d9" red="ef" type="rgb"/>
+            </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="8" rowCount="2">
                 <Column editable="true" title="Title 1" type="java.lang.Object"/>
@@ -485,6 +506,14 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JLabel" name="xinchao">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="17" style="0"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icon/usher (1).png"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="masv">
     </Component>
@@ -496,6 +525,12 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton10">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="17" style="0"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icon/logoutx24.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Tho&#xe1;t"/>
       </Properties>
       <Events>
