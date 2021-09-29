@@ -56,7 +56,7 @@ public class qldiem extends javax.swing.JFrame {
             con = connectionft.getConnection();
         } catch (Exception e) {
         }
-        //
+        // set text cho các ô ngoài 
         this.setLocationRelativeTo(null);
         thongtinsv.setText("----------------------------Thông Tin Sinh Viên----------------------------");
         masv.setText("Mã Sinh Viên : ");
@@ -74,7 +74,7 @@ public class qldiem extends javax.swing.JFrame {
     }
 
     public void showdiem() {
-        //tao ten cot
+        //tao ten cột
         Vector cols = new Vector();
         cols.addElement("MSSV");
         cols.addElement("Kỳ Học");
@@ -91,21 +91,23 @@ public class qldiem extends javax.swing.JFrame {
             stmt = con.prepareStatement(sql);
             //
             rs = stmt.executeQuery();
-            //
-            while (rs.next()) {
+            // load dữ liệu từ csld ra ngoài bảng 
+            while (rs.next()) { // kiểm tra điều kiện
                 Vector user = new Vector();
                 user.addElement(rs.getString("mssv"));
                 user.addElement(rs.getString("kyhoc"));
                 user.addElement(rs.getString("hocphan"));
-                user.addElement(rs.getInt("tinchi"));
+                user.addElement(rs.getInt("tinchi")); // kiểu dữ liệu int
                 user.addElement(rs.getString("heso"));
-                user.addElement(rs.getFloat("giuaky"));
-                user.addElement(rs.getFloat("cuoiky"));
+                user.addElement(rs.getFloat("giuaky")); //kiểu dữ liệu float
+                user.addElement(rs.getFloat("cuoiky")); //kiêu dữ liệu float
                 user.addElement(rs.getString("diemchu"));
+                // thêm dữ liệu đã load vào vector data with biến user lấy từ csdl
                 data.add(user);
             }
         } catch (Exception e) {
         }
+        //thiết lập dữ liệu vào bảng với tham số cols : là tên cột và : dữ liệu hàng 
         bangdiemsv.setModel(new DefaultTableModel(data, cols));
     }
 
@@ -600,14 +602,14 @@ public class qldiem extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_hlsvActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         cpasv dgpa = new cpasv();
         //
         qldiem_control a = new qldiem_control();
         a.gpa(dgpa);
         //
         gpa.setText(String.valueOf(dgpa.getGpa()));
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         this.setVisible(false);
@@ -616,13 +618,15 @@ public class qldiem extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // lấy điêm từ ô text về
+        // lấy điêm từ ô text về đẩy vào class diemsv
         diemsv dsv = new diemsv();
         dsv.setMssv(ma.getText());
         dsv.setKyhoc(kyhoc.getText());
         dsv.setHocphan(tenhp.getText());
+        // chuyển kiểu dữ liệu từ text-> int
         dsv.setTinchi(Integer.parseInt(tc.getText()));
         dsv.setHeso(heso.getSelectedItem().toString());
+        // chuyển kiểu dữ liệu từ text-> float load từ ô người dùng
         dsv.setGiuaky(Float.parseFloat(gk.getText()));
         dsv.setCuoiky(Float.parseFloat(ck.getText()));
         //
@@ -633,6 +637,7 @@ public class qldiem extends javax.swing.JFrame {
                 if (dsv.getGiuaky() < 3.0 | dsv.getCuoiky() < 3.0) {
                     dsv.setDiemchu("F");
                 } else {
+                    // tính điểm tổng kết
                     diemtongket = dsv.getGiuaky() * 0.3f + dsv.getCuoiky() * 0.7f;
 
                     if (diemtongket < 4.0) {
@@ -679,8 +684,9 @@ public class qldiem extends javax.swing.JFrame {
                 if (dsv.getGiuaky() < 3.0 | dsv.getCuoiky() < 3.0) {
                     dsv.setDiemchu("F");
                 } else {
+                    // tính điểm tổng kết
                     diemtongket = dsv.getGiuaky() * 0.2f + dsv.getCuoiky() * 0.8f;
-                    //
+                    //kiểm tra điểm tổng kết
                     if (diemtongket < 4.0) {
                         dsv.setDiemchu("F");
                         break;
@@ -730,6 +736,7 @@ public class qldiem extends javax.swing.JFrame {
     }//GEN-LAST:event_gkActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // nút clear txxt cá ô
         tenhp.setText(null);
         gk.setText(null);
         ck.setText(null);
@@ -742,7 +749,10 @@ public class qldiem extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3MouseClicked
 
     private void bangdiemsvMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bangdiemsvMouseClicked
+       // lấy vị trị row
         int row = bangdiemsv.getSelectedRow();
+        // kiểm tra row khác tiêu đề col
+        // khi click set text lên các ô phía trên người dùng nhập 
         if (row != -1) {
             kyhoc.setText(bangdiemsv.getValueAt(row, 1).toString());
             tenhp.setText(bangdiemsv.getValueAt(row, 2).toString());
@@ -761,14 +771,16 @@ public class qldiem extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
        int a = 0;
+       // mở cửa sổ thư mục
         JFileChooser chooser = new JFileChooser();
         int i = chooser.showSaveDialog(chooser);
         if (i == JFileChooser.APPROVE_OPTION) {
             File file = chooser.getSelectedFile();
             try {
+                // khia báo wb
                 WritableWorkbook wb = Workbook.createWorkbook(file);
                 WritableSheet st = wb.createSheet("Report", 0);
-                //
+                //chọn ô đầu tiên [0,0]
                 st.addCell(new Label(0, 0, "Bảng Điểm Sinh Viên " + ma.getText() + ""));
                 //
                 DefaultTableModel bangdiem = (DefaultTableModel) bangdiemsv.getModel();
@@ -803,8 +815,9 @@ public class qldiem extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         cpasv dcpa = new cpasv();
         dcpa.setKyhoc(cpatheoky.getSelectedItem().toString());
-        //
+        //lấy kỳ học 
         qldiem_control tinhcpa = new qldiem_control();
+        // truyền tham số vào hàm cpa
         tinhcpa.cpa(dcpa);
         //
         cpa.setText(String.valueOf(dcpa.getCpa()));

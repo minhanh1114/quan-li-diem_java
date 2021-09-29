@@ -45,7 +45,7 @@ public class ttsv {
     public String getMssv() {
         return mssv;
     }
-
+    // lấy dữ liệu vào class ttsv 
     public void setMssv(String mssv) {
         this.mssv = mssv;
     }
